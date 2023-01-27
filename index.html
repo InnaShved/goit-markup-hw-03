@@ -7,27 +7,31 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <!-- logo and navigation-->
-            <a href="./index.html" class="logo link"><span class="logo-part">Web</span>Studio</a>
-            <!-- links -->
-            <ul class="site-nav list">
-                <li><a href="" class="link">Studio</a></li>
-                <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-                <li><a href="" class="link">Contacts</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul class="auth-nav list">
-                <li><a href="mailto:info@devstudio.com" class="contacts link" >info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="contacts link">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <nav>
+                <!-- logo and navigation-->
+                <a href="./index.html" class="logo link"><span class="logo-part">Web</span>Studio</a>
+                <!-- links -->
+                <ul class="site-nav list">
+                    <li><a href="./index.html" class="link">Studio</a></li>
+                    <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+                    <li><a href="" class="link">Contacts</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="auth-nav list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="contacts link">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!-- h1 and order option -->
@@ -36,72 +40,82 @@
            <button type="button" class="button">Order Service</button>
         </section>
         <!-- values and advantages of the company -->
-        <section class="section">
-            <!-- h2 will be hidden with css -->
-            <h2 class="section-title">values</h2> 
-            <ul class="advantages-list list">
-                <li>
-                    <h3 class="title">Strategy</h3> 
-                    <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-                </li>
+        <section class="section values">
+            <div class="container">
+                <!-- h2 will be hidden with css -->
+                <h2 hidden class="section-title">values</h2>
+                <ul class="advantages-list list">
+                    <li>
+                        <h3 class="title">Strategy</h3>
+                        <p class="text">Our goal is to identify the business problem to walk away with the perfect and creative
+                            solution.</p>
+                    </li>
                 
-                <li>
-                    <h3 class="title">Punctuality</h3> 
-                    <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
+                    <li>
+                        <h3 class="title">Punctuality</h3>
+                        <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible
+                            time.</p>
+                    </li>
                 
-                <li>
-                    <h3 class="title">Diligence</h3> 
-                    <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                </li>
+                    <li>
+                        <h3 class="title">Diligence</h3>
+                        <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize
+                            risk.</p>
+                    </li>
                 
-                <li>
-                    <h3 class="title">Technologies</h3> 
-                    <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                </li>
-              
-            </ul>
+                    <li>
+                        <h3 class="title">Technologies</h3>
+                        <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for
+                            problem-solving.</p>
+                    </li>
+                
+                </ul>
+            </div>
         </section>
         <!-- examples of services -->
-        <section class="section">
-            <h2 class="section-title">What are we doing</h2>
-            <ul class="service-list list">
-                <li>
-                    <img src="./images/wawd1.jpg" alt="desktop app image" width="360">
-                </li>
-                <li>
-                    <img src="./images/wawd2.jpg" alt="mobile app image" width="360">
-                </li>
-                <li>
-                    <img src="./images/wawd3.jpg" alt="lptop and mobile app" width="360">
-                </li>
-            </ul>
+        <section class="section services">
+            <div class="container">
+                <h2 class="section-title">What are we doing</h2>
+                <ul class="service-list list">
+                    <li>
+                        <img src="./images/wawd1.jpg" alt="desktop app image" width="360">
+                    </li>
+                    <li>
+                        <img src="./images/wawd2.jpg" alt="mobile app image" width="360">
+                    </li>
+                    <li>
+                        <img src="./images/wawd3.jpg" alt="lptop and mobile app" width="360">
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- teammembers -->
         <section class="section team">
-            <h2 class="section-title">Our Team</h2>
-            <ul class="list team-list">
-                <li>
-                    <img src="./images/team1.jpg" alt="teammember" width="264">
-                    <h3 class="title">Mark Guerrero</h3>
-                    <p class="text">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/team2.jpg" alt="teammember" width="264">
-                    <h3 class="title">Tom Ford</h3>
-                    <p class="text">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/team3.jpg" alt="teammember" width="264">
-                    <h3 class="title">Camila Garcia</h3>
-                    <p class="text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/team4.jpg" alt="teammember" width="264">
-                    <h3 class="title">Daniel Wilson</h3>
-                    <p class="text">UI Designer</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="section-title">Our Team</h2>
+                <ul class="list team-list">
+                    <li>
+                        <img src="./images/team1.jpg" alt="teammember" width="264">
+                        <h3 class="title">Mark Guerrero</h3>
+                        <p class="text">Product Designer</p>
+                    </li>
+                    <li>
+                        <img src="./images/team2.jpg" alt="teammember" width="264">
+                        <h3 class="title">Tom Ford</h3>
+                        <p class="text">Frontend Developer</p>
+                    </li>
+                    <li>
+                        <img src="./images/team3.jpg" alt="teammember" width="264">
+                        <h3 class="title">Camila Garcia</h3>
+                        <p class="text">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="./images/team4.jpg" alt="teammember" width="264">
+                        <h3 class="title">Daniel Wilson</h3>
+                        <p class="text">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">

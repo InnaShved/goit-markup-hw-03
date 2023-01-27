@@ -1,8 +1,10 @@
+
 html{
     box-sizing: border-box;
 }
 *, *::after,*::before{
     box-sizing: inherit;
+    outline: 1px solid tomato;
 }
 :root{
     --primary-text-color:#434455;
@@ -17,10 +19,21 @@ html{
     --secondary-accent-color:#404BBF;
 }
 body{  
+    
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
+    margin: 0;
         
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+/* ---------------common styles------------ */
+.container {
+    width: 1158px;
 }
 
 .logo{
@@ -35,12 +48,13 @@ body{
 .logo-part{
     color: var(--accent-color);
 }
-.hero-title {
+.hero-title { /*h1*/
     font-size: 56px;
     color: var(--primary-bg-color);
     letter-spacing: 0.02em;
     line-height: 1.07;
     text-align: center;
+    margin: 0 auto 48px 0;
  
 }
 /* h2 */
@@ -58,6 +72,7 @@ body{
     color: var(--secondary-text-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 1px;
 }
 
 /* p */
@@ -85,6 +100,8 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    /* padding: 7px 2px; */
+    display: inline-block;
     
 }
 .site-nav .link:hover,
@@ -108,6 +125,9 @@ body{
 .footer{
     background-color: var(--secondary-text-color);
     color: var(--third-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 156px;
 }
 .footer-logo{
     color: var(--second-bg-color);
@@ -118,31 +138,52 @@ body{
 
 /* hero section */
 .hero {
-    background-color: #2E2F42;;
+    background-color: #2E2F42;
+    text-align: center;
+    padding: 188px 473px;
+    /* margin-top: 72px; */
+    margin-bottom: 72px;
 }
 .button {
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     border-radius: 4px;
-    border: none;
+    border: 1px solid transparent;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.04em;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     cursor: pointer;
+    min-width: 169px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-align: center;
+    padding: 16px 32px;
 }
+
 .button:hover,
 .button:focus {
     color: var(--primary-bg-color);
     background-color: var(--secondary-accent-color);
-
-
 }
-/*------teammembers section------------- */
+/* ---------- values, services, teammembers sections--- */
+.section.values,
+section.services{
+    margin-bottom: 120px;
+}
+
+.services .section-title,
+.team .section-title {
+    margin-bottom: 72px;
+}
+
+
 .section.team {
     background-color: var(--second-bg-color);
+    padding:120px;
+    margin-bottom: 12px;
 }
 /* PORTFOLIO page */
 
@@ -150,7 +191,10 @@ body{
 .button.btn-secondary {
     color: var(--accent-color);
     background-color: var(--second-bg-color);
-    border: 1px solid var(--third-text-color);
+    border-color: var(--third-text-color);
+    min-width: 69px;
+    padding: 12px 24px;
+
 
 }
 .button.btn-secondary:hover,
@@ -159,5 +203,27 @@ body{
     background-color: var(--secondary-accent-color);
 
 }
+.examples {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+img.work-example {
+    margin-bottom: 32px;
 
+}
+.list.filter-btns{
+    margin-bottom: 72px;
+}
 
+.portfolio {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    outline: 1px solid green;
+}
+.portfolio h2, .portfolio.p{ 
+ padding-right: 16px;
+}
+/*це тимчасові костилі:
+на макеті ці елементи вкладені в один спільний, 
+але дів не можна завернути в а
+зробити падінг для li не можна, бо відсунеться картинка*/
