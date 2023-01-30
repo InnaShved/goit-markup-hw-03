@@ -4,7 +4,7 @@ html{
 }
 *, *::after,*::before{
     box-sizing: inherit;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 :root{
     --primary-text-color:#434455;
