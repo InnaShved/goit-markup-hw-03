@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.02em;
     line-height: 1.07;
     text-align: center;
-    margin: 0 auto 48px 0;
+    margin: 0 auto 48px auto;
  
 }
 /* h2 */
@@ -183,11 +183,11 @@ margin-top: 16px;
 .hero {
     background-color: #2E2F42;
     text-align: center;
-    padding: 188px 0;
+    padding: 188px 473px;
    
 }
 .button {
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     border-radius: 4px;
@@ -230,16 +230,18 @@ img.worke-xample {
 
 .advantages-list.list, .service-list.list, .list.team-list{
     display: flex;
-    /* justify-content: space-between; */
+    
 }
 .advantages-list .item{
-    display:inline-block;
     flex-basis: calc((100% -24px*3)/4);
     /* 264px; */
     
 }
 .advantages-list .item:not(:last-child){
     margin-right: 24px;
+}
+.advantages-list .title{
+    margin-bottom: 8px;
 }
 
 
@@ -259,7 +261,6 @@ img.worke-xample {
 
 .list .team-info{
     text-align: center;
-    /* margin-top: 32px; */
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -339,8 +340,14 @@ img.work-example {
 
 }
 .portfolio-content{ 
- padding-left: 16px;
- padding-bottom: 32px;
- padding-top: 32px;
-border-bottom: 1px solid var(--third-text-color);
+    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    border-right: 1px solid var(--third-text-color);
+    border-left: 1px solid var(--third-text-color);
+    border-bottom: 1px solid var(--third-text-color);
+   
+}
+.portfolio-content .title{
+    margin-bottom: 8px;
 }
