@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.07;
     text-align: center;
     margin: 0 auto 48px auto;
+    width: 496px;
  
 }
 /* h2 */
@@ -183,7 +184,7 @@ margin-top: 16px;
 .hero {
     background-color: #2E2F42;
     text-align: center;
-    padding: 188px 473px;
+    padding: 188px 0;
    
 }
 .button {
@@ -316,19 +317,25 @@ img.worke-xample {
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 img.work-example {
     display: block;
 
 }
-
+.list.works-list .portfolio{
+ flex-basis: calc((100%-2*24px)/3);
+}
 .portfolio {
-    flex-basis: 360px;
     margin-bottom: 48px;
     margin-right: 24px;
+
     
     /* outline: 1px solid green; */
 
+}
+.portfolio .link {
+/* width: 100%; */
 }
 .portfolio:nth-last-child(-n + 3) {
     margin-bottom: 0;
